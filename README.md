@@ -1,6 +1,6 @@
-# Shivam Optical (Haute Lunetterie)
+# Shivam Opticals (Haute Lunetterie)
 
-A luxury eyewear boutique and optical eye clinic web application for **Shivam Optical**, located in Samachar Market, Mayur Vihar Phase 1 Extension, Delhi.
+A luxury eyewear boutique and optical eye clinic web application for **Shivam Opticals**, located in Samachar Market, Mayur Vihar Phase 1 Extension, Delhi.
 
 ## ✨ Features
 
@@ -19,7 +19,7 @@ A luxury eyewear boutique and optical eye clinic web application for **Shivam Op
 ## 📁 Project Structure
 
 ```
-shivam-optics/
+shivam-opticals/
 ├── index.html                    # Home landing page with hero banners & collections
 ├── products.html                 # Complete filterable eyewear catalog
 ├── product.html                  # Individual product view with 3-angle gallery

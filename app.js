@@ -1,4 +1,4 @@
-// Shivam Optics - Haute Lunetterie E-Commerce Engine
+// Shivam Opticals - Haute Lunetterie E-Commerce Engine
 
 // 1. Comprehensive Product Catalog
 const DEFAULT_PRODUCTS = [
@@ -1161,7 +1161,7 @@ function handleNewsletter(event) {
   event.preventDefault();
   const emailInput = document.getElementById('newsletterEmail');
   const email = emailInput ? emailInput.value : '';
-  showToast(`Welcome to Shivam Optics Haute Lunetterie circle!`);
+  showToast(`Welcome to Shivam Opticals Haute Lunetterie circle!`);
   if (emailInput) emailInput.value = '';
 }
 
@@ -1339,14 +1339,14 @@ function handleAuthSubmit(e, type) {
     const email = document.getElementById('signUpEmail')?.value || 'member@shivam.club';
     const phone = document.getElementById('signUpPhone')?.value || '';
     user = { name, email, phone };
-    showToast(`Account created! Welcome to Shivam Optical VIP Club.`);
+    showToast(`Account created! Welcome to Shivam Opticals VIP Club.`);
   }
   setAuthUser(user);
   closeLoginModal();
 }
 
 function handleGuestAuth() {
-  const guest = { name: 'Guest Collector', email: 'guest@shivamoptical.com', phone: '+91 98765 00000' };
+  const guest = { name: 'Guest Collector', email: 'guest@shivamopticals.com', phone: '+91 98765 00000' };
   setAuthUser(guest);
   showToast('Signed in as Guest Collector');
   closeLoginModal();
@@ -1696,7 +1696,7 @@ function processParsedData(fileName, rawRows) {
   const products = [];
 
   rawRows.forEach((row, idx) => {
-    const brand = getRowField(row, ['brand', 'brandname', 'make', 'designer', 'manufacturer', 'label'], 'SHIVAM OPTICAL').toUpperCase();
+    const brand = getRowField(row, ['brand', 'brandname', 'make', 'designer', 'manufacturer', 'label'], 'SHIVAM OPTICALS').toUpperCase();
     const name = getRowField(row, ['name', 'title', 'productname', 'model', 'framename', 'itemname', 'item'], `Haute Frame #${idx + 1}`);
     
     // Parse prices
@@ -1874,7 +1874,7 @@ function resetToDefaultCatalog() {
   renderProductGrid();
   updateImportUIState();
   closeImportModal();
-  showToast('Catalogue reset to original Shivam Optical collection.');
+  showToast('Catalogue reset to original Shivam Opticals collection.');
 }
 
 // Update UI badges/buttons depending on whether custom catalog is active
